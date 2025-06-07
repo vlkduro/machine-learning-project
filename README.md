@@ -29,7 +29,7 @@ print(adult.metadata)
 # variable information 
 print(adult.variables) 
 ```
-Nous choisissons de les télécharger via la librairie Python.
+Nous choisissons de les télécharger via le site web..
 
 ## Présentation des sources
 Les fichiers obtenus se présentent comme suit :
