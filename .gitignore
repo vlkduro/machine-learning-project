@@ -3,3 +3,6 @@
 
 # intellij
 .idea
+
+# Projets Python
+__pycache__
