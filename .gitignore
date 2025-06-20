@@ -1,4 +1,8 @@
 # Environnement virtuel
 .venv
+
 # intellij
 .idea
+
+# Projets Python
+__pycache__
