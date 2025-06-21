@@ -11,6 +11,8 @@ Le projet contient deux jupyter notebooks :
 - **AED.ipynb** : correspond à l'ensemble du code lié à l'analyse exploratoire des données.
 - **entrainement.ipynb** : correspond à l'ensemble du code lié aux pré-traitement, à l'entrainement et à l'évaluation des modèles de machine learning.
 
+**Attention** : l'exécution du notebook `entrainement.ipynb` peut prendre un temps significativement long en particulier pour les modèles : AdaBoosting, Stacking et SVM. Temps d'exécution sur un M1 Air : 62 minutes.
+
 ### Fichier Python :
 
 Un fichier Python `AED_utils.py` contient du code nécessaire à l'exécution du notebook `AED.ipynb`. A conserver à la racine du projet.
