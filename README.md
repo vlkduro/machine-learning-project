@@ -2,6 +2,25 @@
 
 L'objectif de ce projet en trinôme est de traiter un problème de machine learning à l'aide d'un jeu de données réelles.
 
+## Architecture du projet
+
+### Jupyter notebook
+
+Le projet contient deux jupyter notebooks :
+
+- **AED.ipynb** : correspond à l'ensemble du code lié à l'analyse exploratoire des données.
+- **entrainement.ipynb** : correspond à l'ensemble du code lié aux pré-traitement, à l'entrainement et à l'évaluation des modèles de machine learning.
+
+### Fichier Python :
+
+Un fichier Python `AED_utils.py` contient du code nécessaire à l'exécution du notebook `AED.ipynb`. A conserver à la racine du projet.
+
+### Autres :
+
+- requirements.txt : pour installer les dépendances.
+- /figures : dossier contenant l'ensemble des figures générées sous format .png.
+- ai28-rapport-bcv.pdf : fichier rapport écrit sous format .pdf.
+
 ## Installer le projet
 
 Ce projet est un notebook Jupyter contenant des analyses ou du code Python. Toutes les dépendances nécessaires sont listées dans le fichier `requirements.txt`.
