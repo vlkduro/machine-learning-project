@@ -1,75 +1,86 @@
-# AI28-projet : Sujet 3 - Prédiction de niveau de revenus
+# AI28 Project: Topic 3 - Income Level Prediction
 
-L'objectif de ce projet en trinôme est de traiter un problème de machine learning à l'aide d'un jeu de données réelles.
+The goal of this group project (team of three) is to address a machine learning problem using a real-world dataset.
 
-## Architecture du projet
+## Project Architecture
 
-### Jupyter notebook
+### Jupyter Notebooks
 
-Le projet contient deux jupyter notebooks :
+The project contains two Jupyter notebooks:
 
-- **AED.ipynb** : correspond à l'ensemble du code lié à l'analyse exploratoire des données.
-- **entrainement.ipynb** : correspond à l'ensemble du code lié aux pré-traitement, à l'entrainement et à l'évaluation des modèles de machine learning.
+- **`AED.ipynb`**: contains all code related to exploratory data analysis.  
+- **`entrainement.ipynb`**: contains all code related to preprocessing, training, and evaluation of machine learning models.  
 
-**Attention** : l'exécution du notebook `entrainement.ipynb` peut prendre un temps significativement long en particulier pour les modèles : AdaBoosting, Stacking et SVM. Temps d'exécution sur un M1 Air : 62 minutes.
+**Note**: Running the notebook `entrainement.ipynb` may take a significant amount of time, especially for models such as AdaBoosting, Stacking, and SVM. Execution time on a MacBook Air M1: ~62 minutes.  
 
-### Fichier Python :
+### Python File
 
-Un fichier Python `AED_utils.py` contient du code nécessaire à l'exécution du notebook `AED.ipynb`. A conserver à la racine du projet.
+A Python file `AED_utils.py` contains code required for executing the notebook `AED.ipynb`. Keep this file at the project root.  
 
-### Autres :
+### Other Files
 
-- requirements.txt : pour installer les dépendances.
-- /figures : dossier contenant l'ensemble des figures générées sous format .png.
-- ai28-rapport-bcv.pdf : fichier rapport écrit sous format .pdf.
+- **`requirements.txt`**: to install dependencies.  
+- **`/figures`**: folder containing all generated figures in `.png` format.  
+- **`ai28-rapport-bcv.pdf`**: the written report in `.pdf` format.  
 
-## Installer le projet
+---
 
-Ce projet est un notebook Jupyter contenant des analyses ou du code Python. Toutes les dépendances nécessaires sont listées dans le fichier `requirements.txt`.
+## Installation
 
-1. **Cloner le dépôt :**
+This project is a Jupyter Notebook containing analyses and Python code.  
+All required dependencies are listed in `requirements.txt`.
 
+1. **Clone the repository:**
    ```bash
    git clone https://gitlab.utc.fr/ai28_tp_projet/ai28-projet.git
-   cd votre-projet
+   cd your-project
    ```
 
-2. **Créer un environnement virtuel :**
+2. **Create a virtual environment:**
    ```bash
    python -m venv env
-   source env/bin/activate  # Sur Windows : env\Scripts\activate
+   source env/bin/activate  # On Windows: env\Scripts\activate
    ```
-3. **Installer les dépendances :**
-   Exécuter à la racine du projet
+
+3. **Install dependencies:**
+   Run the following at the project root:
    ```bash
-   # S'assurer d'être dans l'environnement virutel
+   # Ensure you are inside the virtual environment
    pip install -r requirements.txt
    ```
-4. **Lancer Jupyter Notebook :**
+
+4. **Launch Jupyter Notebook:**
    ```bash
    jupyter notebook
    ```
 
-### Prérequis :
+### Requirements
 
-- Python 3.7 ou plus
-- pip
-- Jupyter Notebook
-- (optionnel) virtualenv
+- Python 3.7 or higher  
+- pip  
+- Jupyter Notebook  
+- (optional) virtualenv  
 
-## Composition du groupe
+---
 
-| Groupe 2 - BCV   |
+## Group Members
+
+| Group  -  
+BCV    |
 | ---------------- |
 | Alexandre Bidaux |
 | Julie Chartier   |
 | Quentin Valakou  |
 
-## Récupération des données
+---
 
-Deux façons existent afin de récupérer les données sur lesquelles nous travaillons : les télécharger sur le site web UCI Machine Learning Repository ou les télécharger via la librairie python comme suit :
+## Data Retrieval
 
-```
+There are two ways to retrieve the dataset used in this project:  
+- Download it from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/2/adult)  
+- Or load it directly via the Python library:
+
+```python
 from ucimlrepo import fetch_ucirepo
 
 # fetch dataset
@@ -86,21 +97,25 @@ print(adult.metadata)
 print(adult.variables)
 ```
 
-Nous choisissons de les télécharger via le site web..
+In this project, we chose to download the dataset from the UCI website.  
 
-## Présentation des sources
+---
 
-Les fichiers obtenus se présentent comme suit :
+## Dataset Files
+
+The dataset files are structured as follows:
 
 ```
 .
-├── adult.data : jeu de données d'entrainement au format csv (séparateur de colonnes : la virgule)
-├── adult.names : fichier donnant du contexte et descriptions sur les données et les opérations ayant été réalisées dessus
-├── adult.test : jeu de données de test au format csv (séparateur de colonnes : la virgule)
-├── Index : liste les fichiers, leur date de motification et leur taille
-└── old.adult.names : ancienne version du fichier adult.names
+├── adult.data        : training dataset in CSV format (comma-separated)
+├── adult.names       : file providing context and descriptions of the dataset and preprocessing
+├── adult.test        : test dataset in CSV format (comma-separated)
+├── Index             : lists files, modification dates, and sizes
+└── old.adult.names   : previous version of adult.names
 ```
 
-## Sources utilisées
+---
 
-- [Jeu de données Adult](https://archive.ics.uci.edu/dataset/2/adult)
+## Sources
+
+- [Adult Dataset - UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/2/adult)  
