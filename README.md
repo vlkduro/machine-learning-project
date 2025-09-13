@@ -1,4 +1,4 @@
-# AI28 Project: Topic 3 - Income Level Prediction
+#  Machine Learning Group Project - Income Level Prediction
 
 The goal of this group project (team of three) is to address a machine learning problem using a real-world dataset.
 
